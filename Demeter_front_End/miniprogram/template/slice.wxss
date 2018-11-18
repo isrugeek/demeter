@@ -1,0 +1,46 @@
+.sliceContent{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35rpx 0;
+  border-bottom: 1rpx gray solid;
+}
+
+.sliceIntro{
+  display: flex;
+  align-items: center;
+  margin-left: 50rpx;
+}
+
+.slicePanel{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50rpx;
+}
+
+.sliceNum{
+  margin: 0 40rpx;
+}
+
+.sliceImg{
+  width: 75rpx;
+  height: 75rpx;
+  margin-right: 10rpx;
+}
+
+.sliceButton{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #ee1d23;
+  color: white;
+  border: 1rpx #ee1d23 solid;
+}

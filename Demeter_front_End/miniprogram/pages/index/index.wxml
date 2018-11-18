@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="header">
+ <view class="h1-header">
+  Discover: <text>Your Freinds in Demeter</text>
+ </view>
+</view>
+<view class="container">
+ <view class="wrap"> 
+ <button style='margin-bottom;background:#ffdc38;color:black' class='Done' bindtap='add'>Demet</button>
+  <block wx:for="{{stories}}" wx:for-item="fml" wx:key="objectId">
+   <view class="card">
+    <view class="card-description">
+     <view class="quote">
+     {{fml.quote}}
+     </view>
+     <view>
+     <image src="/images/shaomai.png"></image>
+     </view>
+     <view class="fml-upvote">
+      <text class="counter">{{fml.upvote}}</text>
+      <image class="emoji-logo" src="/images/logo.png" bindtap="increment" id="{{fml.objectId}}"></image>  
+     </view>
+    </view>
+   </view>
+  </block>
+ </view>
+</view>
+
+
+
+<import src="../../template/tabbar.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>

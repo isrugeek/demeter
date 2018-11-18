@@ -1,0 +1,9 @@
+<!--pages/helloworld/helloworld.wxml-->
+<!--index.wxml-->
+<import src="../../template/slice.wxml" />
+<view class="content" catchtouchmove="false">
+</view>
+
+
+<import src="../../template/tabbar.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>

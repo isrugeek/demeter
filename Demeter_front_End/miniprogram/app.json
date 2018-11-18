@@ -1,0 +1,19 @@
+{
+  "pages": [
+  "pages/summary/summary",
+    "pages/library/library",
+    "pages/result/result",
+    "pages/me/me",
+    "pages/new/new",
+    "pages/index/index",
+    "pages/cut/cut",
+    "pages/helloworld/helloworld"
+  ],
+  "window": {
+    "backgroundColor": "#efeff0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Demeter",
+    "navigationBarTextStyle": "black"
+  }
+}

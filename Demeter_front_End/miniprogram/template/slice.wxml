@@ -1,0 +1,11 @@
+<template name="slice">
+  <view class="sliceContent">
+    <view class="sliceIntro">
+      <image class="sliceImg" src=""></image>
+      <text class="sliceName">{{name}}</text>
+    </view>
+    <view class="slicePanel">
+      <text class="sliceNum">{{number}}</text>
+    </view>
+  </view>
+</template>

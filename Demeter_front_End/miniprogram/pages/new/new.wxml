@@ -1,0 +1,24 @@
+<!--pages/new/new.wxml-->
+<view class="header">
+ <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+ <view class="h2-header">Submit your Demeter</view>
+</view>
+<view class="container">
+ <view class="wrap">
+  <view class="desc">Please Tell to Demeter's What is Happening with you, as you know we all care about Today, Make sure You Start with Today (-_-)</view>
+  <form bindsubmit="bindFmlSubmit">
+   <view class="user-input">
+    <view class="text-area-wrap">
+     <textarea placeholder="Name" value="{{userInfo.nickName}}" name="nickName" auto-height />
+    </view>
+
+   </view>
+   <view class="user-input">
+    <view class="text-area-wrap">
+     <textarea style="input-size"placeholder="Today, I am Happy with demeter." class="input-height" name="quote" maxlength="-1" />
+    </view>
+   </view>
+   <button  style="margin-bottom:50px;background:#ffdc38;color:black"type="primary" form-type="submit" loading="{{loading}}">Submit</button>
+  </form>
+ </view>
+</view>

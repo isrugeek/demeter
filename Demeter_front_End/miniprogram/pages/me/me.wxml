@@ -1,0 +1,44 @@
+<!--pages/me/me.wxml-->
+<view class="header">
+ <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+ <view class="h2-header"> {{userInfo.nickName}} Age: 23</view>
+</view>
+<view class="container">
+ <view class="wrap">
+  <view class="desc">Always Make sure you gave us the Correct Infos. Until we come with facial recognition Mode</view>
+  <form bindsubmit="bindFmlSubmit">
+   <view class="user-input">
+    <view class="text-area-wrap"> Full Name:
+     <textarea placeholder="Name" value="{{userInfo.nickName}}" name="nickName" auto-height />
+    </view>
+   </view>
+   <view class="user-input">
+    <view class="text-area-wrap"> Height:
+     <textarea placeholder="Height" name="Height" auto-height />
+    </view>
+
+   </view>
+      <view class="user-input">
+    <view class="text-area-wrap"> Weight:
+     <textarea placeholder="Weight" name="Weight" auto-height />
+    </view>
+
+   </view>
+   <button  style="background:#ffdc38;color:black"type="primary" form-type="submit" loading="{{loading}}">Save</button>
+
+
+
+
+   <!-- Requires to use button to authorize the login attempts -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize login</button>
+<view wx:else>Please upgrade WeChat version</view>
+  </form> 
+
+
+ </view>
+</view>
+
+
+
+<import src="../../template/tabbar.wxml" />
+<template is="tabbar" data="{{tabbar}}"/>

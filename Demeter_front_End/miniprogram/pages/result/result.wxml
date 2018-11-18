@@ -1,0 +1,17 @@
+<!-- shoppingCart.wxml -->
+<import src="../../template/slice.wxml" />
+
+<view class="content" catchtouchmove="false">
+  <view class="banner" style="justify-content: center;">
+    <text class="bannerTitle">Scan Result</text>
+  </view>
+  <view><image src="{{img_src}}" style='width:90%;height:440rpx;margin:5%'/></view>
+  <scroll-view class="container" scroll-y="true">
+    <template is="slice" data="{{name:'食物(food name)', number:name}}"/>
+    <view wx:for="{{nut_items}}" wx:for-index="index" wx:for-item="item">
+        <template is="slice" data="{{name:item.key, number:item.val}}"/>
+    </view>
+
+    <button style='margin-bottom;background:#ffdc38;color:black' class='Done' bindtap='add'>Add</button>
+  </scroll-view>
+</view>
